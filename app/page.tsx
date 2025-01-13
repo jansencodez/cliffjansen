@@ -63,7 +63,7 @@ const Home: React.FC = () => {
         </div>
 
         {/* Introduction */}
-        <h1 className="text-4xl font-bold mb-4 text-white">
+        <h1 className="text-4xl font-bold mb-4">
           Hi, I am Nyamwe Cliff Jansen
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-400">
