@@ -102,7 +102,7 @@ const projects = [
     name: "Portfolio",
     description: "My personal portfolio showcasing my work and projects.",
     link: "https://github.com/jansencodez/portfolio",
-    liveLink: "#", // You can add your portfolio live link here
+    liveLink: "https://cliffjansen.vercel.app/", // You can add your portfolio live link here
     icon: <PortfolioIcon />,
   },
   {
@@ -139,19 +139,26 @@ const Projects: React.FC = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-white bg-green-500 hover:bg-green-600 transition-colors duration-300 px-4 py-2 rounded-3xl shadow-sm text-base md:text-lg"
+                className="inline-block text-white bg-green-500 hover:bg-green-600 transition-colors duration-300 px-4 py-2 rounded-3xl shadow-sm text-base"
               >
                 View on GitHub
               </a>
-              {project.liveLink && (
+              {project.liveLink !== "#" ? (
                 <a
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-300 px-4 py-2 rounded-s-3xl shadow-sm text-base md:text-lg"
+                  className="inline-block text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-300 px-4 py-2 rounded-s-3xl shadow-sm text-base"
                 >
                   View in Action
                 </a>
+              ) : (
+                <button
+                  disabled
+                  className="inline-block text-white bg-gray-400 cursor-not-allowed transition-colors duration-300 px-4 py-2 rounded-s-3xl shadow-sm text-base max-w-fit"
+                >
+                  Coming Soon
+                </button>
               )}
             </div>
           </div>

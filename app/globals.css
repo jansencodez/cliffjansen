@@ -136,10 +136,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #2f855a; /* Darker green on hover */
-}
-
 .dark button {
   background-color: #2f855a; /* Darker button for dark mode */
 }
