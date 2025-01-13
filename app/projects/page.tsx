@@ -139,7 +139,7 @@ const Projects: React.FC = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-white bg-green-500 hover:bg-green-600 transition-colors duration-300 px-4 py-2 rounded-3xl shadow-sm"
+                className="inline-block text-white bg-green-500 hover:bg-green-600 transition-colors duration-300 px-4 py-2 rounded-3xl shadow-sm text-base md:text-lg"
               >
                 View on GitHub
               </a>
@@ -148,7 +148,7 @@ const Projects: React.FC = () => {
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-300 px-4 py-2 rounded-s-3xl shadow-sm"
+                  className="inline-block text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-300 px-4 py-2 rounded-s-3xl shadow-sm text-base md:text-lg"
                 >
                   View in Action
                 </a>
