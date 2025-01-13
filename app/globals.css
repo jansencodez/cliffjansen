@@ -1,0 +1,209 @@
+/* Import Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+
+/* Reset some default browser styles */
+
+/* Set the body font and background */
+body {
+  font-family: "Inter", sans-serif; /* Modern sans-serif font */
+  background-color: #f9fafb; /* Light background for readability */
+  color: #333; /* Default text color */
+  line-height: 1.6; /* Line height for better readability */
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Section */
+section {
+  @apply bg-white text-gray-900;
+}
+
+.dark section {
+  @apply bg-gray-900 text-gray-50;
+}
+
+/* Body */
+body {
+  @apply bg-white text-gray-900; /* Light mode */
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-50; /* Dark mode */
+}
+
+/* Header */
+header {
+  @apply bg-white text-gray-900;
+}
+
+.dark header {
+  @apply bg-gray-800 text-gray-50;
+}
+
+div {
+  @apply bg-white text-gray-900;
+}
+
+.dark div {
+  @apply bg-gray-800 text-gray-50;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body transition for smooth color change */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for links */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit the text color */
+}
+
+.dark a {
+  color: #e2e8f0; /* Light color in dark mode */
+}
+
+/* Add some padding and margin to sections */
+section {
+  padding: 2rem;
+}
+
+/* Add smooth transitions to buttons and links for hover effects */
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+/* Styling for headers and paragraphs */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif; /* Elegant serif font for headings */
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4 {
+  color: #e2e8f0; /* Light color for headings in dark mode */
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Styling for form inputs and buttons */
+input,
+textarea,
+button {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0; /* Soft border */
+  padding: 0.8rem;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* Button styles */
+button {
+  background-color: #38a169; /* Green for buttons */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2f855a; /* Darker green on hover */
+}
+
+.dark button {
+  background-color: #2f855a; /* Darker button for dark mode */
+}
+
+.dark button:hover {
+  background-color: #38a169; /* Lighter green on hover in dark mode */
+}
+
+/* Input and textarea */
+input,
+textarea {
+  background-color: #ffffff;
+}
+
+.dark input,
+.dark textarea {
+  background-color: #2d3748; /* Dark input background */
+  color: #e2e8f0; /* Light text color in dark mode */
+  border: 1px solid #4a5568; /* Darker border in dark mode */
+}
+
+/* Container to keep things centered and responsive */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Flexbox helpers */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
