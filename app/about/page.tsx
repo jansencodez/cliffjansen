@@ -1,6 +1,6 @@
 import React from "react";
 
-// Inline SVGs for the icons
+// Inline SVGs for the icons (unchanged)
 const WebDevelopmentIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const MobileDevelopmentIcon = () => (
   </svg>
 );
 
-const CoreSkillsIcon = () => (
+const PythonIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -50,7 +50,7 @@ const CoreSkillsIcon = () => (
     height="24"
   >
     <path
-      d="M12 17l5 5m0-5l-5 5m5-5h-7m7 0l-5-5m5 5l-5 5"
+      d="M16 2H8a2 2 0 00-2 2v4a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zM16 16H8a2 2 0 00-2 2v4a2 2 0 002 2h8a2 2 0 002-2v-4a2 2 0 00-2-2z"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="2"
@@ -77,7 +77,6 @@ const ProblemSolvingIcon = () => (
   </svg>
 );
 
-// SVG for the "View My Projects/Work" arrow
 const ArrowIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -105,11 +104,12 @@ const About: React.FC = () => {
         About Me
       </h1>
       <p className="text-lg text-gray-500 leading-relaxed text-center max-w-3xl mx-auto mb-8">
-        Hello! I&apos;m a passionate developer with expertise in the MERN stack
-        and mobile development. I specialize in creating intuitive,
-        high-performance applications designed to solve real-world problems.
-        Whether it&apos;s web development or mobile applications, I&apos;m
-        committed to delivering user-friendly solutions that make an impact.
+        Hello! I&apos;m a passionate developer with expertise in the MERN stack,
+        Python, FastAPI, and mobile development. I specialize in creating
+        intuitive, high-performance applications designed to solve real-world
+        problems. Whether it&apos;s web development or mobile applications,
+        I&apos;m committed to delivering user-friendly solutions that make an
+        impact.
       </p>
 
       <div className="bg-white shadow-lg rounded-lg p-6">
@@ -129,10 +129,10 @@ const About: React.FC = () => {
             </span>
           </li>
           <li className="flex items-center">
-            <CoreSkillsIcon />
+            <PythonIcon />
             <span className="text-gray-500 text-lg ml-5">
-              <strong>Core Skills:</strong> Problem-solving, teamwork,
-              communication, critical thinking
+              <strong>Backend Development:</strong> Python, FastAPI, MongoDB,
+              Node js, Express, RESTful APIs
             </span>
           </li>
           <li className="flex items-center">
