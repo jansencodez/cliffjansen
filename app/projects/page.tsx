@@ -95,7 +95,7 @@ const projects = [
     description:
       "A tech company project focused on innovation in tech solutions.",
     link: "https://github.com/jansencodez/wevatechnologies",
-    liveLink: "https://wevatechnologies.vercel.app/",
+    liveLink: "https://wevatechnologies.software",
     icon: <WebDevIcon />,
   },
   {
